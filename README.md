@@ -1,4 +1,4 @@
-##The Homeric Hymns RPG
+## The Homeric Hymns RPG
 
 The goal of this project is to create a simple RPG as a creative project for Signum University's Classical Myths and Legends class.
 The player will have the opportunity to gain weapons, fight mythical monsters, solve some simple puzzles, and find their wyrd... no, wrong language. Fate. Μοῖρα.
