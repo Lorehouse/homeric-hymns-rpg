@@ -7,7 +7,7 @@ def intro(P1):
     print("It is a merchant-style ship with low walls around a deck that contains some crates and ἀμφορεύς. /nThese ἀμφορεύς are of a rust-colored clay and lay stacked on their sides as they do not have a flat bottom on which to stand.")
     #draw a picture of the amphorae here
 
-class Player:
+class Hero:
     def __init__(self, name, weapon, strength, ἀσπίς):
         self.name = name
         self.weapon = weapon
@@ -17,5 +17,7 @@ class Player:
 def create_player():
     name = input("It is time to create your character. \n Enter your character's name: ")
     weapon = input("In your life as a humble shepherd in the hills, \nyou have developed proficiency in fighting off wild animals and robbers with a weapon. \nPlease choose from the following weapons: ξίφος (a sword), or δόρυ (a spear).")
-
+    strength = input("Wisdom, strength, or speed")
+    ἀσπίς = ἀσπίς
+    return Hero(name, weapon, strength, ἀσπίς)
 intro()
