@@ -1,9 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title>Χαῖρε</title>
-    </head>
-    <body>
-        <h1>Χαῖρε, κόσμε!</h1>
-    </body>
-</html>
+{% extends "game/layout.html" %}
+
+{% block body %}
+    <h1>Count Up:</h1>
+    <form action="" method="post">
+        {% csrf_token %}
+        <h2><span class="counter">{{ counter }}</span> <span class="counter">{{ countertwo }}</span></h2>
+        <div class="buttons"><button name="action" value="1">Click Me!</button>
+        <button name="action" value="2">No no, Click ME!</button></div>
+    </form>
+{% endblock %}

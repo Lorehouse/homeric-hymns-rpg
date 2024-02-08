@@ -1,6 +1,20 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.http import HttpResponse
 
 def index(request):
-    return render(request, "game/index.html")
-# Create your views here.
+    if "counter" not in request.session:
+        request.session["counter"] = 0
+    if "countertwo" not in request.session:
+        request.session["countertwo"] = 0
+    if request.method == "POST":
+        action = request.POST.get("action")
+        if action == "1":
+            request.session["counter"] += 1
+        elif action == "2":
+            request.session["countertwo"] += 1
+        return redirect("index")
+    return render(request, "game/index.html", {
+        "counter": request.session["counter"],
+        "countertwo": request.session["countertwo"],
+    })
+
