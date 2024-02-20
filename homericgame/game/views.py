@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
+from django import forms
 
 def index(request):
     if "counter" not in request.session:

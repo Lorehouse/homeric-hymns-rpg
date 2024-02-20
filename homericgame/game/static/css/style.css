@@ -1,0 +1,35 @@
+.tinos-regular {
+    font-family: "Tinos", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+.counter{
+    text-align: center;
+    padding-right: 5rem;
+    padding-left: 2rem
+}
+body{
+    font-family: "Tinos", serif;
+    font-size: 14px;
+	text-align: center;
+	margin: 3em auto;
+	max-width: 40em;
+	display: block;
+	background-color: Moccasin;
+}
+h2{
+    font-family: "Tinos", serif;
+    font-size: 24px;
+}
+button{
+    color: rebeccapurple;
+    text-align: center;
+}
+div.buttons{
+    text-align: center;
+}
+
+div.space{
+    padding-left: 3rem;
+    padding-right: 1rem;
+}
