@@ -1,0 +1,15 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+        <title>Counter</title>
+    </head>
+    <body>
+       <h1> Χαιρείς κόσμε! </h1>
+       <a class="game" href="{% url 'index' %}"> Start your Adventure </a>
+    </body>
+</html>
