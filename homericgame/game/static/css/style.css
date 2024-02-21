@@ -8,6 +8,14 @@
     padding-right: 5rem;
     padding-left: 2rem
 }
+.buttons{
+    align-items: right;
+    display: flex;
+    gap: 100px;
+}
+.statbar{
+    text-align: right;
+}
 body{
     font-family: "Tinos", serif;
     font-size: 14px;
@@ -25,11 +33,11 @@ button{
     color: rebeccapurple;
     text-align: center;
 }
-div.buttons{
-    text-align: center;
-}
-
-div.space{
+.space{
     padding-left: 3rem;
     padding-right: 1rem;
+}
+a.game{
+    font-size: 18pt;
+    top: 50%;
 }

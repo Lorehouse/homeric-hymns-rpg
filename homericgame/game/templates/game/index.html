@@ -2,11 +2,11 @@
 {% load static %}
 <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
 {% block body %}
-    <h1>Count Up:</h1>
+    <h1>The Adventure Begins</h1>
     <form action="" method="post">
         {% csrf_token %}
-        <h2><span class="counter">{{ counter }}</span> <span class="counter">{{ countertwo }}</span></h2>
-        <div class="buttons"><button name="action" value="1">Click Me!</button>
-        <button name="action" value="2">No no, Click ME!</button></div>
+        <h2><span class="counter">{{ HP }}</span> <span class="counter">{{ XP }}</span></h2>
+        <div class="buttons"><button name="action" value="1">Sword</button>
+        <button name="action" value="2">Spear</button></div>
     </form>
 {% endblock %}

@@ -1,0 +1,20 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+        <title>HTMX test</title>
+    </head>
+<script src="https://unpkg.com/htmx.org@1.9.9"></script>
+
+<div class="statbar"><span class="stat">HP = {{ HP }}</span><span class="stat">XP = {{ XP }}</span> <span class="stat" id="weaponChoice">Weapon = {{ weapon }}</span><span class="stat">Gold = {{ gold }}</span></div>
+
+<h1>This is the first test of HTMX</h1>
+
+<div class="buttons"><button hx-post="/weapon" hx-swap=afterend hx-target="weaponChoice" name="action" value="1">Sword</button>
+<button hx-post="/weapon" hx-swap=afterend hx-target="weaponChoice" name="action" value="2">Spear</button></div>
+</form>
+<div id="response">You have chosen {{ weapon }}</div>
